@@ -47,6 +47,7 @@ body {
   border-radius: 5px;
   margin-bottom: 10px;
   border: 1px solid #f5c6cb;
+  display: none;
 }
 
 .form form .name-details {
@@ -109,7 +110,10 @@ body {
   transform: translateY(-50%);
   cursor: pointer;
 }
-
+.form form .field i.active::before{
+  content: "\f070";
+  color: #333;
+}
 .form .link {
   text-align: center;
   margin: 10px 0;
@@ -184,18 +188,32 @@ body {
   font-size: 16px;
   border-radius: 5px 0 0 5px;
   outline: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
 }
-
+.users .search input.active {
+  opacity: 1;
+  pointer-events: auto;
+}
 .users .search button {
   width: 47px;
   height: 42px;
   border: none;
   outline: none;
-  color: #fff;
+  color: #333;
   font-size: 17px;
-  background: #333;
+  background: #fff;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.users .search button.active{
+  background: #333;
+  color: #fff;
+}
+.users .search button.active i::before{
+  content: "\f00d";
 }
 .user-list {
   max-height: 350px;
