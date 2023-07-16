@@ -15,17 +15,17 @@
         <section class="form login">
             <header>Realtime ChatApp</header>
             <form action="#">
-                <div class="error-txt">this is an error Message</div>
+                <div class="error-txt"></div>
             
 
                 <div class="field input">
                     <label>Email Address</label>
-                    <input type="email" placeholder="Enter Email" name="" id="">
+                    <input type="email" placeholder="Enter Email" name="email" required>
                 </div>
 
                 <div class="field input">
                     <label>Password</label>
-                    <input type="password" placeholder="Enter your Password" name="" id="">
+                    <input type="password" placeholder="Enter your Password" name="password" required>
                     <i class="fas fa-eye"></i>
             
                 </div>
@@ -33,10 +33,11 @@
                     <input type="submit" value="Continue to Chat">
                 </div>
             </form>
-            <div class="link">Not yet signup? <a href="#">Signup now</a></div>
+            <div class="link">Not yet signup? <a href="index.php">Signup now</a></div>
         </section>
     </div>
 </body>
 <script src="javascript/pass-show-hide.js"></script>
+<script src="javascript/login.js"></script>
 
 </html>

@@ -47,7 +47,7 @@
                     <input type="submit" value="Continue to Chat">
                 </div>
             </form>
-            <div class="link">Already signup? <a href="#">Login now</a></div>
+            <div class="link">Already signup? <a href="login.php">Login now</a></div>
         </section>
     </div>
 </body>
