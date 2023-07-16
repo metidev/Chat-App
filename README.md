@@ -14,7 +14,7 @@ To set up the chat application project locally, follow these steps:
 
 1. Clone the repository to your local machine using the following command:
 
-git clone https://github.com/metidev/chatapp.git
+  ```git clone https://github.com/metidev/chatapp.git```
 
 2. Ensure you have PHP and a web server (e.g., Apache, Nginx) installed on your machine.
 
