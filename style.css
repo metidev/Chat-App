@@ -155,10 +155,11 @@ body {
   height: 50px;
 }
 :is(.users, .user-list) .details {
-  color: #000;
+  color: #333;
   margin-left: 15px;
 }
 :is(.users, .user-list) span {
+  color: #000;
   font-size: 18px;
   font-weight: 500;
 }
