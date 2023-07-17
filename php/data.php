@@ -15,6 +15,7 @@
         if(isset($row2['outgoing_msg_id'])){
             ($outgoing_id == $row2['outgoing_msg_id']) ? $you = "You: " : $you = "";
         }
+        ($row['status'] == "Offline Now") ? $offline = "offline" : $offline = "";
     $output .= '<a href="chat.php?user_id='. $row['unique_id'] .'">
         <div class="content">
             <img src="php/images/' . $row['img'] .'" alt="">
@@ -23,7 +24,7 @@
                 <p>'.$you.$msg.'</p>
             </div>
         </div>
-        <div class="status-dot"><i class="fas fa-circle"></i></div>
+        <div class="status-dot '.$offline .'"><i class="fas fa-circle"></i></div>
     </a>';
 }
 ?>
