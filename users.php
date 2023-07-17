@@ -20,15 +20,15 @@ include_once 'header.php'; ?>
                     <img src="<?= 'php/images/' . $row['img'] ?>" alt="">
                     <div class="details">
                         <span><?= $row['fname'] . " " . $row['lname'] ?></span>
-                        <p><?= $row['status'] ?></p>
+                        <p><?= ($row['status'] == "Active Now" ? "اکنون فعال است" : "آخرین بازدید به تازگی")  ?></p>
                     </div>
                 </div>
-                <a href="php/logout.php?logout_id=<?= $row['unique_id'] ?>" class="logout">Logout</a>
+                <a href="php/logout.php?logout_id=<?= $row['unique_id'] ?>" class="logout">خروج</a>
             </header>
            
             <div class="search">
-                <span class="text">Select an user to start chat</span>
-                <input type="text" placeholder="Enter name to search..." name="" id="">
+                <span class="text">برای شروع گفتگو یک کاربر را انتخاب کنید</span>
+                <input type="text" placeholder="نام کاربر را برای جستجو وارد کنید..." name="" id="">
                 <button><i class="fas fa-search"></i></button>
             </div>
             <div class="user-list">

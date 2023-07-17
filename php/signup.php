@@ -10,8 +10,8 @@ if (!empty($fname) && !empty($lname) && !empty($email) && !empty($password)) {
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $sql = mysqli_query($conn, "SELECT email FROM users WHERE email = '{$email}'");
         if (mysqli_num_rows($sql) > 0) {
-            echo "$email - This is already exists!";
-        } else {
+            echo "$email - این ایمیل از قبل وجود دارد";
+        } else {    
             if (isset($_FILES['image'])) {
                 $img_name = $_FILES['image']['name'];
                 $img_type = $_FILES['image']['type'];
@@ -38,21 +38,21 @@ if (!empty($fname) && !empty($lname) && !empty($email) && !empty($password)) {
                                 $_SESSION['unique_id'] = $row['unique_id'];
                                 echo "success";
                             } else {
-                                echo "Something went wrong";
+                                echo "خطایی رخ داد";
                             }
                         }
                     } else {
-                        echo "Please select an Image file - jpeg, jpg, png";
+                        echo "پسوند های مجاز برای عکس - jpeg, jpg, png";
                     }
                 } else {
-                    echo "Please select an Image file";
+                    echo "لطفا یک عکس پروفایل انتخاب کنید";
                 }
             }
         }
 
     } else {
-        echo "$email - This is not a valid email address";
+        echo "$email - این یک ایمیل صحیح نیست";
     }
 } else {
-    echo "all input fields are required";
+    echo "تمام فیلدهای ورودی اجباریست";
 }

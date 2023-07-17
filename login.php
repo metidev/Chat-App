@@ -8,27 +8,27 @@ include_once 'header.php'; ?>
 <body>
     <div class="wrapper">
         <section class="form login">
-            <header>Realtime ChatApp</header>
+        <header><h2>متیچ</h2><br><p>چت برای همه</p></header>
             <form action="#">
                 <div class="error-txt"></div>
             
 
                 <div class="field input">
-                    <label>Email Address</label>
-                    <input type="email" placeholder="Enter Email" name="email" required>
+                    <label>ایمیل</label>
+                    <input type="email" placeholder="ایمیل خود را وارد کنید" name="email" required>
                 </div>
 
                 <div class="field input">
-                    <label>Password</label>
-                    <input type="password" placeholder="Enter your Password" name="password" required>
+                    <label>رمز عبور</label>
+                    <input type="password" placeholder="رمز عبور خود را وارد کنید" name="password" required>
                     <i class="fas fa-eye"></i>
             
                 </div>
                 <div class="field button">
-                    <input type="submit" value="Continue to Chat">
+                    <input type="submit" value="به سوی چت">
                 </div>
             </form>
-            <div class="link">Not yet signup? <a href="index.php">Signup now</a></div>
+            <div class="link">حساب ندارید؟ <a href="index.php">ثبت نام </a></div>
         </section>
     </div>
 </body>

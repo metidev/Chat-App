@@ -1,10 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200; 300; 400; 500; 600; 700&display=swap");
+@font-face {
+  font-family: Vazirmatn;
+  src: url('fonts/Vazirmatn-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200; 300; 400; 500; 600; 700&display=swap"); */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
 }
 
 body {
@@ -16,6 +23,7 @@ body {
 }
 
 .wrapper {
+  direction: rtl;
   background: #fff;
   width: 450px;
   border-radius: 16px;
@@ -31,8 +39,98 @@ body {
 .form header {
   font-size: 25px;
   font-weight: 600;
-  padding-bottom: 10px;
+  text-align: center;
+  line-height: 0.8;
+  padding-bottom: 15px;
   border-bottom: 1px solid #e6e6e6;
+}
+.form header h2 {
+   animation: Color 4s linear infinite;
+  -webkit-animation: Color 4s ease-in-out infinite;
+  text-shadow: 10px 10px #F0F0F0;
+}
+
+@keyframes Color{
+  0%{
+    color:#A0D468;
+  }
+  
+  20%{
+    color:#4FC1E9;
+  }
+  
+  40%{
+    color:#FFCE54;
+  }
+  
+  60%{
+    color:#FC6E51;
+  }
+  
+  80%{
+    color:#ED5565;
+  }
+  
+  100%{
+    color:#AC92EC;
+  }
+}
+
+@-moz-keyframes Color{
+  0%{
+    color:#A0D468;
+  }
+  
+  20%{
+    color:#4FC1E9;
+  }
+  
+  40%{
+    color:#FFCE54;
+  }
+  
+  60%{
+    color:#FC6E51;
+  }
+  
+  80%{
+    color:#ED5565;
+  }
+  
+  100%{
+    color:#AC92EC;
+  }
+}
+
+@-webkit-keyframes Color{
+  0%{
+    color:#A0D468;
+  }
+  
+  20%{
+    color:#4FC1E9;
+  }
+  
+  40%{
+    color:#FFCE54;
+  }
+  
+  60%{
+    color:#FC6E51;
+  }
+  
+  80%{
+    color:#ED5565;
+  }
+  
+  100%{
+    color:#AC92EC;
+  }
+}
+.form header p {
+  color: #333;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .form form {
@@ -55,11 +153,11 @@ body {
 }
 
 .form .name-details .field:first-child {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .form .name-details .field:last-child {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .form form .field {
@@ -104,7 +202,7 @@ body {
 
 .form form .field i {
   position: absolute;
-  right: 15px;
+  left: 15px;
   color: #ccc;
   top: 70%;
   transform: translateY(-50%);
@@ -156,7 +254,7 @@ body {
 }
 :is(.users, .user-list) .details {
   color: #333;
-  margin-left: 15px;
+  margin-right: 15px;
 }
 :is(.users, .user-list) span {
   color: #000;
@@ -187,7 +285,7 @@ body {
   border: 1px solid #ccc;
   padding: 0 13px;
   font-size: 16px;
-  border-radius: 5px 0 0 5px;
+  border-radius: 0 5px 5px 0;
   outline: none;
   opacity: 0;
   pointer-events: none;
@@ -205,7 +303,7 @@ body {
   color: #333;
   font-size: 17px;
   background: #fff;
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px 0 0 5px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -224,7 +322,7 @@ body {
   width: 0;
 }
 .user-list a {
-  padding-right: 15px;
+  padding-left: 15px;
   margin-bottom: 15px;
   page-break-after: 10px;
   border-bottom-color: #f1f1f1;
@@ -290,13 +388,13 @@ body {
   display: flex;
 }
 .outgoing .details {
-  margin-left: auto;
+  margin-right: auto;
   max-width: calc(100% - 130px);
 }
 .outgoing .details p {
   background: #333;
   color: #fff;
-  border-radius: 18px 18px 0 18px;
+  border-radius: 18px 18px 18px 0;
 }
 .chat-box .incoming {
   display: flex;
@@ -307,14 +405,14 @@ height: 35px;
 width: 35px;
 }
 .incoming .details {
-  margin-left: 10px;
-  margin-right: auto;
+  margin-right: 10px;
+  margin-left: auto;
   max-width: calc(100% - 130px);
 }
 .incoming .details p {
   background: #fff;
   color: #333;
-  border-radius: 18px 18px 18px 0;
+  border-radius: 18px 18px 0 18px;
 }
 .chat-area .typing-area{
   padding: 18px 30px;
@@ -327,7 +425,7 @@ width: 35px;
   font-size: 17px;
   border: 1px solid #ccc;
   padding: 0 13px;
-  border-radius: 5px 0 0 5px;
+  border-radius: 0 5px 5px 0;
   outline: none;
 }
 .typing-area button{
@@ -338,5 +436,5 @@ width: 35px;
   color: #fff;
   font-size: 19px;
   cursor: pointer;
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px 0 0 5px;
 }

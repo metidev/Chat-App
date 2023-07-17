@@ -18,14 +18,14 @@ include_once 'header.php'; ?>
                     $row = mysqli_fetch_assoc($sql);
                 }
                 ?>
-                <a href="users.php" class="back-icon"><i class="fas fa-arrow-left"></i></a>
+                <a href="users.php" class="back-icon"><i class="fas fa-arrow-right"></i></a>
                 <img src="<?= 'php/images/' . $row['img'] ?>" alt="">
                 <div class="details">
                     <span>
                         <?= $row['fname'] . " " . $row['lname'] ?>
                     </span>
                     <p>
-                        <?= $row['status'] ?>
+                        <?= ($row['status'] == "Active Now" ? "اکنون فعال است" : "آخرین بازدید به تازگی")  ?>
                     </p>
                 </div>
             </header>
@@ -36,7 +36,7 @@ include_once 'header.php'; ?>
             <form action="#" class="typing-area" autocomplete="off">
                 <input type="text" name="outgoing_id" hidden value="<?= $_SESSION['unique_id'] ?>">
                 <input type="text" name="incoming_id" hidden value="<?= $user_id ?>">
-                <input class="input-field" name="message" type="text" placeholder="type a message here...">
+                <input class="input-field" name="message" type="text" placeholder="چیزی بنویسید...  ">
                 <button><i class="fab fa-telegram-plane"></i></button>
             </form>
         </section>
