@@ -25,7 +25,7 @@ include_once 'header.php'; ?>
                         <?= $row['fname'] . " " . $row['lname'] ?>
                     </span>
                     <p>
-                        <?= ($row['status'] == "Active Now" ? "اکنون فعال است" : "آخرین بازدید به تازگی")  ?>
+                        <?= ($row['status'] == "Active Now" ? "آفلاین" : "آخرین بازدید به تازگی")  ?>
                     </p>
                 </div>
             </header>

@@ -20,7 +20,7 @@ include_once 'header.php'; ?>
                     <img src="<?= 'php/images/' . $row['img'] ?>" alt="">
                     <div class="details">
                         <span><?= $row['fname'] . " " . $row['lname'] ?></span>
-                        <p><?= ($row['status'] == "Active Now" ? "اکنون فعال است" : "آخرین بازدید به تازگی")  ?></p>
+                        <p><?= ($row['status'] == "Active Now" ? "آنلاین" : "آخرین بازدید به تازگی")  ?></p>
                     </div>
                 </div>
                 <a href="php/logout.php?logout_id=<?= $row['unique_id'] ?>" class="logout">خروج</a>
