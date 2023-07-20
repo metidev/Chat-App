@@ -12,17 +12,19 @@ This is a chat application project built using PHP, JavaScript, HTML, and CSS te
 
 To set up the chat application project locally, follow these steps:
 
-1. Clone the repository to your local machine using the following command: <br> ```git clone https://github.com/metidev/chatapp.git```
+1. Clone the repository to your local machine using the following command:  
+```
+git clone https://github.com/metidev/chatapp.git
+```
+3. Ensure you have PHP and a web server (e.g., Apache, Nginx) installed on your machine.
 
-2. Ensure you have PHP and a web server (e.g., Apache, Nginx) installed on your machine.
+4. Import the provided database schema `chatapp.sql` into your preferred database management system.
 
-3. Import the provided database schema `chatapp.sql` into your preferred database management system.
+5. Update the database connection settings in the `config.php` file to match your local environment.
 
-4. Update the database connection settings in the `config.php` file to match your local environment.
+6. Start your local web server and navigate to the project directory.
 
-5. Start your local web server and navigate to the project directory.
-
-6. Access the chat application through your web browser.
+7. Access the chat application through your web browser.
 
 ## Usage
 
