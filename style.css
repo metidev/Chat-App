@@ -324,7 +324,7 @@ body {
 .user-list a {
   padding-left: 15px;
   margin-bottom: 15px;
-  page-break-after: 10px;
+  page-break-after: auto;
   border-bottom-color: #f1f1f1;
 }
 .user-list a:last-child {
@@ -366,6 +366,11 @@ body {
 .chat-area header span {
   font-size: 17px;
   font-weight: 500;
+}
+.chat-area header p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #858585;
 }
 .chat-box {
   height: 500px;

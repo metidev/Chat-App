@@ -15,9 +15,9 @@
                 echo "success";
             }
         }else{
-            echo "Email or password incorrect";
+            echo "ایمیل یا رمزعبور صحیح نیست";
         }
     }else{
-        echo "All input fields are required!";
+        echo "تمام فیلد های ورودی اجباریست";
     }
 ?>
